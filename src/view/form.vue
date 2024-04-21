@@ -10,6 +10,7 @@
                     <el-input v-model="item.age"></el-input>
                 </el-form-item>
             </div>
+            
 
             <el-form-item>
                 <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
