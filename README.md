@@ -1,6 +1,6 @@
-# VUE2.0
+# VUE2.0 主分支
 
-## 下载依赖
+### 下载依赖
 ```
 yarn install
 ```
@@ -15,10 +15,3 @@ yarn run serve
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
