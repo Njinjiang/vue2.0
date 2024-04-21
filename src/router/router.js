@@ -23,6 +23,11 @@ const routes=[
         name:'form',
         component:()=>import('@/view/form.vue')
     },
+    {
+        path:'/transfer',
+        name:'transfer',
+        component:()=>import('@/view/transfer.vue')
+    },
 ]
 
 //实例化VueRouter并将routes添加进去

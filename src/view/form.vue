@@ -1,5 +1,6 @@
 <template>
-    <div class="formPage">
+    <div class="home">
+        <h3>tree递归处理数据</h3>
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
 
             <div v-for="(item,index) in ruleForm.data" :key="index">
@@ -67,8 +68,6 @@
 </script>
 <style lang="scss" scoped>
 
-   .formPage{
-    width:50%;
-   }
+  
 
 </style>
