@@ -1,16 +1,16 @@
-# cfapp
+# VUE2.0
 
-## Project setup
+## 下载依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 本地开发环境
 ```
-yarn serve
+yarn run serve
 ```
 
-### Compiles and minifies for production
+### 项目打包
 ```
 yarn build
 ```
