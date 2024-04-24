@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h3>transfer穿梭树</h3>
+        <h3>transfer</h3>
       <el-transfer filterable :titles=titles :filter-method="filterMethod" filter-placeholder="请输入城市拼音" v-model="array"
         @change="getValue" :data="data">
       </el-transfer>

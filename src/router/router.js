@@ -6,8 +6,9 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter)
 
 //定义routes路由的集合，数组类型
+
+//单个路由均为对象类型，path代表的是路径，component代表组件
 const routes=[
-    //单个路由均为对象类型，path代表的是路径，component代表组件
     {
         path:'/',
         name:'home',
@@ -16,27 +17,37 @@ const routes=[
     {
         path:'/tree',
         name:'tree',
-        component:()=>import('@/view/tree.vue')
+        component:()=>import('@/view/component/tree.vue')
     },
     {
         path:'/form',
         name:'form',
-        component:()=>import('@/view/form.vue')
+        component:()=>import('@/view/component/form.vue')
     },
     {
         path:'/transfer',
         name:'transfer',
-        component:()=>import('@/view/transfer.vue')
+        component:()=>import('@/view/component/transfer.vue')
     },
     {
         path:'/checkbox',
         name:'checkbox',
-        component:()=>import('@/view/checkbox.vue')
+        component:()=>import('@/view/component/checkbox.vue')
     },
     {
         path:'/radio',
         name:'radio',
-        component:()=>import('@/view/radio.vue')
+        component:()=>import('@/view/component/radio.vue')
+    },
+    {
+        path:'/array',
+        name:'array',
+        component:()=>import('@/view/func/array.vue')
+    },
+    {
+        path:'/object',
+        name:'object',
+        component:()=>import('@/view/func/object.vue')
     },
 ]
 

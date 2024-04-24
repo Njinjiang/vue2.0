@@ -16,19 +16,16 @@ export default {
                  flag: false, 
                  list: [],
             }
-        }
-        ,
+        },
         props: {
             msg: String
-        }
-        ,
+        },
         mounted() {
             let _this = this;
             setTimeout(function () {
                 _this.list = [{ bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }]
             }, 3000)
-        }
-        ,
+        },
         methods: {
             changeValue(item) {
                 console.log(item.bob)
