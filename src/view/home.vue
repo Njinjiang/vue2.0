@@ -67,6 +67,13 @@
 </script>
 
 <style scoped>
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .router-link-active {
+    text-decoration: none;
+  }
   .el-row {
     margin-bottom: 20px;
 

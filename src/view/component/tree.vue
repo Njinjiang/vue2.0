@@ -1,11 +1,6 @@
 <template>
     <div class="home">
-      <h3>tree</h3>
-      <div class="op">
-         <div>
-            <span>你好啊</span>
-         </div>  
-      </div>
+      <h3>Tree</h3>
       <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
     </div>
   </template>

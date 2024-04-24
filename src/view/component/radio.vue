@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h3>radio</h3>
+        <h3>Radio</h3>
         <el-radio v-model="radio" label="1">备选项</el-radio>
         <el-radio v-model="radio" label="2">备选项</el-radio>
         <br>

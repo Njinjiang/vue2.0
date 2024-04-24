@@ -1,6 +1,12 @@
 <template>
     <div class="home">
-        <h3>array</h3>
+        <h3>Arrray</h3>
+
+        <p>const find=this.list.find( item=>item.number>3 )</p>
+
+        <p>const filter=this.list.filter( item=>item.number>3 )</p>
+
+        <p>const map=this.list.map( item=>item.number*3 )</p>
     </div>
 </template>
 <script>    

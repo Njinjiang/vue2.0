@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h3>tree</h3>
+        <h3>Form</h3>
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
 
             <div v-for="(item,index) in ruleForm.data" :key="index">

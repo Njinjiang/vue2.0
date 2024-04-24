@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h3>checkbox</h3>
+        <h3>Checkbox</h3>
         <div v-for="item of list">
             <el-checkbox v-model="item.bob" :true-label="1" :false-label="0" @change="changeValue(item)">
                 备选项
@@ -24,7 +24,7 @@ export default {
             let _this = this;
             setTimeout(function () {
                 _this.list = [{ bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }]
-            }, 3000)
+            }, 500)
         },
         methods: {
             changeValue(item) {
