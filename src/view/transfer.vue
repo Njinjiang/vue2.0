@@ -4,6 +4,9 @@
       <el-transfer filterable :titles=titles :filter-method="filterMethod" filter-placeholder="请输入城市拼音" v-model="array"
         @change="getValue" :data="data">
       </el-transfer>
+      <div v-for="item of list">
+        <el-checkbox v-model="item.bob" :true-label="1" :false-label="0"  @change="changeValue(item)">备选项</el-checkbox>
+      </div>
     </div>
   </template>
   
@@ -25,10 +28,13 @@
           return data;
         };
         return {
+          checked:"0",
           data: generateData(),
           submitArray: [],
           array: [],
+          flag:false,
           titles: ['可选', '已选'],
+          list:[],
           filterMethod(query, item) {
             return item.pinyin.indexOf(query) > -1;
           }
@@ -37,7 +43,26 @@
       props: {
         msg: String
       },
+      mounted(){
+        let _this=this;
+        setTimeout(function(){
+          _this.list=[
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0},
+          {bob:0}
+        ]
+        },3000)
+      },
       methods: {
+        changeValue(item){
+          console.log(item.bob)
+        },
         getValue(value) {
           this.submitArray = [];
           this.data.forEach((item, index) => {

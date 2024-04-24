@@ -28,6 +28,16 @@ const routes=[
         name:'transfer',
         component:()=>import('@/view/transfer.vue')
     },
+    {
+        path:'/checkbox',
+        name:'checkbox',
+        component:()=>import('@/view/checkbox.vue')
+    },
+    {
+        path:'/radio',
+        name:'radio',
+        component:()=>import('@/view/radio.vue')
+    },
 ]
 
 //实例化VueRouter并将routes添加进去
