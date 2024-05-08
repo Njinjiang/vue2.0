@@ -20,6 +20,11 @@ const routes=[
         component:()=>import('@/view/component/tree.vue')
     },
     {
+        path:'/tree1',
+        name:'tree1',
+        component:()=>import('@/view/component/tree1.vue')
+    },
+    {
         path:'/form',
         name:'form',
         component:()=>import('@/view/component/form.vue')

@@ -70,6 +70,9 @@
   a {
     text-decoration: none;
     color: #fff;
+    :hover{
+      text-decoration: none;
+    }
   }
   .router-link-active {
     text-decoration: none;
@@ -88,15 +91,15 @@
   }
 
   .bg-purple-dark {
-    background: #99a9bf;
+    background: #0f1318;
   }
 
   .bg-purple {
-    background: #d3dce6;
+    background: #0f1318;
   }
 
   .bg-purple-light {
-    background: #e5e9f2;
+    background: #0f1318;
   }
 
   .grid-content {

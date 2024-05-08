@@ -1,7 +1,11 @@
 <template>
     <div class="home">
       <h3>Tree</h3>
-      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+      <el-tree 
+      :data="data" 
+      :props="defaultProps" 
+      @node-click="handleNodeClick">
+    </el-tree>
     </div>
   </template>
   
