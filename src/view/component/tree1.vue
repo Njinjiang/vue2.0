@@ -5,7 +5,6 @@
                 :props="defaultProps" ref="tree">
             </el-tree>
             <button @click="getInfo">获取数据</button>
-
             <el-tree :data="data1" show-checkbox node-key="label"  default-expand-all	 
                 :props="defaultProps" ref="tree1">
             </el-tree>
