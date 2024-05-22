@@ -2,7 +2,7 @@
     <div class="home">
         <h3>Checkbox</h3>
         <div >
-            <el-checkbox v-model="item.pop" :true-label="1" :false-label="0" v-for="item of list" @change="changeValue(item)">
+            <el-checkbox v-model="item.checked" :true-label="1" :false-label="0" v-for="item of list" @change="changeValue(item)">
                 备选项
             </el-checkbox>
         </div>
@@ -28,7 +28,7 @@ export default {
             getData(){
                 this.list = [{ bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }]
                 this.list.forEach(item=>{
-                    this.$set(item, 'pop', 1)
+                    this.$set(item, 'checked', 1)
                 })
                 console.log("数据获取到了",this.list);
             },
