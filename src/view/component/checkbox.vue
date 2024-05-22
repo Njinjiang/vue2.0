@@ -1,11 +1,12 @@
 <template>
     <div class="home">
         <h3>Checkbox</h3>
-        <div v-for="item of list">
-            <el-checkbox v-model="item.bob" :true-label="1" :false-label="0" @change="changeValue(item)">
+        <div >
+            <el-checkbox v-model="item.pop" :true-label="1" :false-label="0" v-for="item of list" @change="changeValue(item)">
                 备选项
             </el-checkbox>
         </div>
+        <el-button type="primary" plain @click="getData" >获取数据</el-button>
     </div>
 </template>
 <script>    
@@ -21,12 +22,16 @@ export default {
             msg: String
         },
         mounted() {
-            let _this = this;
-            setTimeout(function () {
-                _this.list = [{ bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }]
-            }, 500)
+                
         },
         methods: {
+            getData(){
+                this.list = [{ bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }, { bob: 0 }]
+                this.list.forEach(item=>{
+                    this.$set(item, 'pop', 1)
+                })
+                console.log("数据获取到了",this.list);
+            },
             changeValue(item) {
                 console.log(item.bob)
             },
