@@ -8,3 +8,7 @@ html,body{
     padding:40px;
     width:50%;
 }
+p,li,ul{
+    margin:0;
+    padding:0;
+}
