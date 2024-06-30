@@ -13,7 +13,6 @@
 export default {
         data() {
             return {
-                checked: "0",
                  flag: false, 
                  list: [],
             }
@@ -33,7 +32,7 @@ export default {
                 console.log("数据获取到了",this.list);
             },
             changeValue(item) {
-                console.log(item.bob)
+                console.log(item.checked)
             },
         }
     }
